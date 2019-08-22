@@ -1,13 +1,12 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "absl/memory/memory.h"
 #include "main/foo.h"
 
 int main(int argc, char** argv) {
   for (int i = 0; i < argc; ++i) {
-    auto foo = absl::make_unique<Foo>(argv[i]);
-    std::cout << foo->get_foo() << "\n";
+    auto foo = Foo::Create(argv[i]);
+    std::cout << foo.result()->get_foo() << "\n";
   }
   return EXIT_SUCCESS;
 }

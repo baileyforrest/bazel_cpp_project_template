@@ -7,3 +7,6 @@
 [submodule "third_party/styleguide"]
 	path = third_party/styleguide
 	url = https://github.com/google/styleguide.git
+[submodule "third_party/libbcf"]
+	path = third_party/libbcf
+	url = https://github.com/baileyforrest/libbcf.git

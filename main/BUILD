@@ -19,6 +19,9 @@ cc_library(
     hdrs = [
         "foo.h",
     ],
+    deps = [
+        "@bcf//bcf:err",
+    ],
 )
 
 cc_test(
